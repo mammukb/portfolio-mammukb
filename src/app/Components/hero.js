@@ -6,9 +6,10 @@ import Image from "next/image";
 import profileImage from "/public/MuhammedKB.png";
 
 function Hero() {
-  const names = [ "  Web Developer"," Web Designer"];
+  
 
   useEffect(() => {
+    const names = [ "  Web Developer"," Web Designer"];
     const options = {
       strings: names,
       typeSpeed: 500,
@@ -24,7 +25,7 @@ function Hero() {
     return () => {
       typed.destroy();
     };
-  }, [names]);
+  }, []);
 
   return (
     <div className="border-2  m-20 justify-center gap-52 mt-16 sm:m-10  flex   lg:flex-row   items-center   rounded-xl text-maincolor-100     sm:flex-col sm:gap-10             ">
@@ -33,7 +34,7 @@ function Hero() {
         <h1>Muhammed K B</h1>
        
         <div className="flex flex-row  border-b-2 text-lg     ">
-          <p>I am a Passionate &nbsp;  </p> {'  '}
+        <p>I am a Passionate &nbsp;&apos;</p>
           <h1 className="typed-text "></h1>
         </div>
         <br />
