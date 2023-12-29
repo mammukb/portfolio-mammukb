@@ -1,4 +1,5 @@
 import React from "react";
+import Skills from "./skills";
 
 function Aboutme() {
   return (
@@ -22,6 +23,7 @@ function Aboutme() {
           connect and produce something truly amazing!
         </p>
       </div>
+      <Skills/>
     </>
   );
 }

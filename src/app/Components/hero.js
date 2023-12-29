@@ -28,12 +28,12 @@ function Hero() {
   }, []);
 
   return (
-    <div className="border-2  m-20 justify-center gap-52 mt-16 sm:m-8  flex   lg:flex-row   items-center   rounded-xl text-maincolor-100     sm:flex-col sm:gap-10             ">
-      <div className="lg:text-6xl  sm:text-lg ">
+    <div className="  m-20 justify-center gap-52 mt-16 sm:m-8  flex   lg:flex-row  md:flex-row    items-center   rounded-xl text-maincolor-100     sm:flex-col sm:gap-10             ">
+      <div className="lg:text-6xl  sm:text-2xl ">
         <h1>Hello I&apos;m </h1>
         <h1 className="whitespace-nowrap" >Muhammed K B</h1>
        
-        <div className="flex flex-row  border-b-2 text-lg  whitespace-nowrap   ">
+        <div className="flex flex-row   text-lg  whitespace-nowrap   ">
         <p>I am a Passionate &nbsp; </p>  
           <h1 className="typed-text"></h1>
         </div>
