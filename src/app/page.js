@@ -8,7 +8,7 @@ export default function Home() {
        <div  id='Home'  >
        <Hero/>
        </div>
-       <div>
+       <div  id='Aboutme'  >
         <Aboutme/>
        </div>
     </main>

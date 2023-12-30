@@ -15,12 +15,12 @@ function Skills() {
     <>
       <div className="flex lg:flex-row sm:flex-col">
         <div className="text-maincolor-50 sm:m-11 lg:m-20">
-          <h1 className="lg:text-8xl font-extrabold sm:text-6xl">
+          <h1 className="lg:text-8xl font-extrabold sm:text-6xl whitespace-nowrap ">
             Things <br /> I Know ??
           </h1>
-          <p className="text-sm">Familiar with using these technologies</p>
+          <p className="text-sm  whitespace-nowrap  ">I&apos;m familiar with using these technologies</p>
         </div>
-        <div  className="flex flex-row gap-8 flex-wrap items-center sm:m-14  "  >
+        <div  className="flex flex-row gap-8 flex-wrap items-center sm:m-11  "  >
           {imageArray.map((imageUrl, index) => (
             <Image
               key={index}
