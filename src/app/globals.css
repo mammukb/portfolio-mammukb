@@ -29,3 +29,12 @@ body {
 body {
   background-color: #EEE2DE;
 }
+
+/* Skills.module.css */
+
+
+
+.circularImage {
+  margin: 0 5px; /* Adjust the margin between images */
+  border-radius: 50%;
+}
