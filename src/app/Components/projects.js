@@ -24,13 +24,15 @@ function Projects() {
     {
       name: "BookmySHow clone",
       image: bookmyshowpic,
-      description: "My React.js and Tailwind CSS-powered BookMyShow clone offers a sleek and responsive interface for easy event discovery and booking. ",
+      description:
+        "My React.js and Tailwind CSS-powered BookMyShow clone offers a sleek and responsive interface for easy event discovery and booking. ",
       language: "React js, tailwind css ",
     },
     {
       name: "Wood Industry Management System",
       image: wimspic,
-      description: "Automate and optimize various business procedures, leading to increased productivity and efficient resource utilization in the wood industry. ",
+      description:
+        "Automate and optimize various business procedures, leading to increased productivity and efficient resource utilization in the wood industry. ",
       language: "Html , css , PHP ",
     },
     /* {
@@ -60,19 +62,19 @@ function Projects() {
       </h1>
       <hr className="text-maincolor-50 m-6 " />
 
-      <div className="flex flex-row justify-center  gap-5   sm:flex sm:flex-col sm:gap-3   ">
+      <div className="lg:flex  gap-5 md:hidden sm:hidden  lg:flex-row lg:justify-center  ">
         {projectList.map((project, index) => (
           <div
             key={index}
-            className="max-w-max mx-10 border border-gray-200 rounded-lg shadow bg-maincolor-50"
+            className="w-64 mx-10 border border-gray-200 rounded-lg shadow bg-maincolor-50"
           >
-            <div className="rounded-t-lg">
+            <div className="rounded-t-lg  ">
               <Image
                 src={project.image}
                 alt={`Project ${index + 1}`}
-                // layout="responsive"
-                width={400} // Set the width as needed
-                height={300} // Set the height as needed
+                layout="responsive"
+                width={200} // Set the width as needed
+                height={200} // Set the height as needed
               />
             </div>
             <div className="p-5">
@@ -86,6 +88,16 @@ function Projects() {
                 Techs: <br /> {project.language}
               </p>
             </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="md:hidden lg:hidden sm:block  flex sm:flex-row  sm:gap-10  ">
+        {projectList.map((project, index) => (
+          <div  key={index} className="bg-maincolor-50 m-5 text-white rounded-lg flex flex-col p-3"  >
+            <h1 className="text-center text-xl font-bold mt-2"   > {project.name}   </h1>
+               <hr className="text-maincolor-50 m-2 " />
+            Techs :<br /> {project.language}
           </div>
         ))}
       </div>

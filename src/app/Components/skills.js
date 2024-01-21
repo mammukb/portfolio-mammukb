@@ -56,7 +56,7 @@ function Skills() {
           </h1>
           <p className="text-sm  whitespace-nowrap  ">I&apos;m familiar with using these technologies</p>
         </div>
-        <div className="flex flex-row gap-8 flex-wrap items-center sm:m-14">
+        <div className="flex flex-row gap-8 flex-wrap items-center sm:m-8">
           {currentImages.map((imageUrl, index) => (
             <div
               key={index}
