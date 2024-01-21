@@ -56,8 +56,8 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-maincolor-100 md:mx-28 md:mt-5 sm:m-6 p-2 overflow-y-auto">
-      <h1 className="text-center text-5xl font-semibold text-maincolor-200">
+    <div className="bg-maincolor-150 md:mx-28 md:mt-5 sm:m-6 p-2 overflow-y-auto  rounded-2xl ">
+      <h1 className="text-center text-5xl font-semibold text-maincolor-100">
         Projects
       </h1>
       <hr className="text-maincolor-50 m-6 " />

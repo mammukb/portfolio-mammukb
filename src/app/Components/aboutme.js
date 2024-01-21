@@ -12,7 +12,7 @@ function Aboutme() {
         <div class="flex-grow border-t border-maincolor-50"></div>
       </div>
 
-      <div className="bg-maincolor-150  mx-44 p-8  text-lg rounded-xl text-white px-28  sm:text-sm sm:mx-10 sm:p-8   ">
+      <div className="bg-maincolor-100  mx-44 p-8  text-lg rounded-xl text-white px-28  sm:text-sm sm:mx-10 sm:p-8   ">
         <p>
           Greetings! As a web developer, I &apos;m passionate about turning creative
           ideas into dynamic web pages. I specialize in writing clear, effective
