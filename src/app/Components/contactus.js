@@ -115,27 +115,51 @@ export default function ContactUs() {
 import { useForm, ValidationError } from "@formspree/react";
 
 import React from "react";
+import { Button, message } from 'antd';
+
 
 function contactus() {
+  const [messageApi, contextHolder] = message.useMessage();
+  const key = 'updatable';
+  const openMessage = () => {
+    messageApi.open({
+      key,
+      type: 'loading',
+      content: 'Loading...',
+    });
+    setTimeout(() => {
+      messageApi.open({
+        key,
+        type: 'success',
+        content: 'Loaded!',
+        duration: 2,
+      });
+    }, 1000);
+  };
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [state, handleSubmit] = useForm("xjvngypq");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+   openMessage();
   }
+  //onSubmit={handleSubmit}
   return (
-    <div>
-      <form onSubmit={handleSubmit}  className="flex flex-col gap-5 align-middle items-center"     >
-        <label htmlFor="email">Email Address</label>
-        <input id="email" type="email" name="email"  placeholder="Enter Email"  />
+    <div className="bg-maincolor-50  rounded-lg   lg:mx-96  lg:self-center    flex flex-row justify-around sm:flex-col sm:gap-3  sm:m-14 sm:mx-5 sm:p-3    "  >
+      <div>
+           <h1 className="text-white  text-6xl sm:text-3xl sm:text-center mb-8 "  >Lets Connect </h1>
+      </div>
+      <form onSubmit={handleSubmit}  className="flex flex-col gap-5 align-middle items-center  "     >
+      <input required id="fullname" type="text" name="fullname"  placeholder="Enter Full Name" className="p-3 rounded-lg " />
+      <ValidationError prefix="FullName" field="fullname" errors={state.errors} />
+      <input required id="email" type="email" name="email"  placeholder="Enter Email" className="p-3 rounded-lg " />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <textarea id="message" name="message"  placeholder="Enter Message"  />
+        <textarea required id="message" name="message"  placeholder="Enter Message" className="p-3 rounded-lg  "   rows={5} cols={23} />
         <ValidationError
           prefix="Message"
           field="message"
           errors={state.errors}
         />
-        <button type="submit" disabled={state.submitting}>
-          Submit
+        <button type="submit" disabled={state.submitting}  className="border-maincolor-200 border-4 bg-green-600 p-2    text-lg rounded-lg     "   >
+          Submit 
         </button>
       </form>
     </div>

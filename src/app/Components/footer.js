@@ -1,3 +1,8 @@
+import React from 'react'
+
+function footer() {
+  return (
+    <div>
 
 
 <footer class="bg-white dark:bg-gray-900">
@@ -84,3 +89,10 @@
       </div>
     </div>
 </footer>
+
+
+    </div>
+  )
+}
+
+export default footer

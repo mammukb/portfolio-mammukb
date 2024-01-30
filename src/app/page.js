@@ -3,6 +3,7 @@ import Hero from './Components/hero'
 import Aboutme from './Components/aboutme'
 import Projects from './Components/projects'
 import ContactUs from './Components/contactus'
+import Footer from './Components/footer'
 
 export default function Home() {
   return (
@@ -13,13 +14,13 @@ export default function Home() {
        <div  id='Aboutme'  >
         <Aboutme/>
        </div>
-       <div  id='Aboutme'  >
+       <div  id='Projects'  >
         <Projects />
        </div>
        <div id='ContactUs' >
         <ContactUs/>
-        
         </div>
+        <Footer/>
     </main>
   )
 }
