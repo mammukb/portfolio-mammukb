@@ -38,11 +38,7 @@ function Hero() {
           <h1 className="typed-text"></h1>
         </div>
         <br />
-        <div>
-          <p>
-            
-          </p>
-        </div>
+        
       {/* <p className="text-lg">
           Greetings! As a web developer, I'm passionate about turning creative
           ideas into dynamic web pages. I specialize in writing clear, effective
