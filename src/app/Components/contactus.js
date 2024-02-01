@@ -14,7 +14,7 @@ function ContactUs() {
   // Function to display success message
   const showSuccessMessage = () => {
     messageApi.success({
-      content: "Your message has been sent successfully!",
+      content: "Message has been sent! Wait for the reply 😊",
       duration: 3, // Duration in seconds
       key: key,
     });
