@@ -1,6 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import logopic from "/public/M1.png";
+import Image from "next/image";
+
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,13 +18,15 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <nav className=" bg-maincolor-50 border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
+        <Image
+            src={logopic}
+            width={50}
+            height={50}
+            className=""
+            alt="My pic"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
            Portfolio
@@ -57,7 +62,7 @@ export default function Navbar() {
           } w-full md:block md:w-auto`}
           id="navbar-multi-level"
         >
-          <ul className="flex flex-col gap-4 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col gap-4 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white bg-maincolor-50 md:dark:bg-maincolor-50 dark:border-gray-700">
             {/* ... (other menu items) */}
             <li>
               <a
