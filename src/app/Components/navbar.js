@@ -3,7 +3,10 @@
 import React, { useState } from "react";
 import logopic from "/public/M1.png";
 import Image from "next/image";
-
+import instapic from "/public/instagram.png";
+import fbpic from "/public/facebook.png";
+import linkedpic from "/public/linkedin.png";
+import github from "/public/github.png";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,10 +21,10 @@ export default function Navbar() {
   };
 
   return (
-    <nav className=" bg-maincolor-50 border-gray-700">
+    <nav className=" bg-maincolor-50 border-white">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-        <Image
+          <Image
             src={logopic}
             width={50}
             height={50}
@@ -29,7 +32,7 @@ export default function Navbar() {
             alt="My pic"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-           Portfolio
+            Portfolio
           </span>
         </a>
         <button
@@ -59,43 +62,91 @@ export default function Navbar() {
         <div
           className={`${
             isMobileMenuOpen ? "block" : "hidden"
-          } w-full md:block md:w-auto`}
+          } w-full md:block md:w-auto `}
           id="navbar-multi-level"
         >
-          <ul className="flex flex-col gap-4 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white bg-maincolor-50 md:dark:bg-maincolor-50 dark:border-gray-700">
+          <ul className="  flex flex-col gap-4 font-medium p-4 md:p-0 mt-4 border border-white rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white bg-maincolor-50 md:dark:bg-maincolor-50 ">
             {/* ... (other menu items) */}
             <li>
               <a
                 href="#Home"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
-               Home
+                Home
               </a>
             </li>
             <li>
               <a
                 href="#Aboutme"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                class="  block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 About
               </a>
-            </li><li>
+            </li>
+            <li>
               <a
                 href="#Projects"
                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Projects
               </a>
-            </li><li>
+            </li>
+            <li>
               <a
                 href="#ContactUs"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                /* class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                 */
               >
-                Contact
+                <button className="border-2 text-white p-2 rounded-lg  hover:text-blue-700  hover:bg-white  ">
+                  Say Hello
+                </button>
               </a>
             </li>
             {/* ... (other menu items) */}
           </ul>
+
+          <div className="flex flex-row gap-4 items-center m-2 mt-3 text-white text-center text-xs  lg:hidden ">
+            <a href="https://instagram.com/__mammu_kb__?igshid=ZDdkNTZiNTM=">
+              <Image
+                src={instapic}
+                width={50}
+                height={50}
+                className=""
+                alt="My pic"
+              />
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/muhammed.kb.39?mibextid=ZbWKwL">
+              <Image
+                src={fbpic}
+                width={50}
+                height={50}
+                className=""
+                alt="My pic"
+              />
+              Facebook
+            </a>
+            <a href="http://www.linkedin.com/in/muhammedkb">
+              <Image
+                src={linkedpic}
+                width={50}
+                height={50}
+                className=""
+                alt="My pic"
+              />
+              Linked In
+            </a>
+            <a href="https://github.com/mammukb">
+              <Image
+                src={github}
+                width={50}
+                height={50}
+                className=""
+                alt="My pic"
+              />
+              Github
+            </a>
+          </div>
         </div>
       </div>
     </nav>
