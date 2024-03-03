@@ -97,54 +97,55 @@ export default function Navbar() {
                 /* class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                  */
               >
-                <button className="border-2 text-white p-2 rounded-lg  hover:text-blue-700  hover:bg-white  ">
-                  Say Hello
+                <button className="border-2  p-2 rounded-lg text-blue-700  bg-white  ">
+                  Say Hello !
                 </button>
               </a>
             </li>
             {/* ... (other menu items) */}
           </ul>
+          <p  className="text-white m-3  lg:hidden " >Connect on :</p>
 
-          <div className="flex flex-row gap-4 items-center m-2 mt-3 text-white text-center text-xs  lg:hidden ">
+          <div className="flex flex-row gap-4 items-center m-3 mt-3 text-white text-center text-xs  lg:hidden ">
             <a href="https://instagram.com/__mammu_kb__?igshid=ZDdkNTZiNTM=">
               <Image
                 src={instapic}
-                width={50}
-                height={50}
+                width={30}
+                height={30}
                 className=""
                 alt="My pic"
               />
-              Instagram
+              
             </a>
             <a href="https://www.facebook.com/muhammed.kb.39?mibextid=ZbWKwL">
               <Image
                 src={fbpic}
-                width={50}
-                height={50}
+                width={30}
+                height={30}
                 className=""
                 alt="My pic"
               />
-              Facebook
+          
             </a>
             <a href="http://www.linkedin.com/in/muhammedkb">
               <Image
                 src={linkedpic}
-                width={50}
-                height={50}
+                width={30}
+                height={30}
                 className=""
                 alt="My pic"
               />
-              Linked In
+            
             </a>
             <a href="https://github.com/mammukb">
               <Image
                 src={github}
-                width={50}
-                height={50}
+                width={30}
+                height={30}
                 className=""
                 alt="My pic"
               />
-              Github
+            
             </a>
           </div>
         </div>
