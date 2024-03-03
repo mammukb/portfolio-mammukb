@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <nav className=" bg-maincolor-50 border-white">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image
             src={logopic}
@@ -65,7 +65,7 @@ export default function Navbar() {
           } w-full md:block md:w-auto `}
           id="navbar-multi-level"
         >
-          <ul className="  flex flex-col gap-4 font-medium p-4 md:p-0 mt-4 border border-white rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white bg-maincolor-50 md:dark:bg-maincolor-50 ">
+          <ul className=" lg:items-center  flex flex-col gap-4 font-medium p-4 md:p-0 mt-5 border border-white rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white bg-maincolor-50 md:dark:bg-maincolor-50 ">
             {/* ... (other menu items) */}
             <li>
               <a
