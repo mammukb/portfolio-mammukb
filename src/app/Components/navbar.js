@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="  border-white">
+    <nav className="  border-white ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           
@@ -79,7 +79,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#Projects"
+                href="/Project"
                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Projects
@@ -91,14 +91,14 @@ export default function Navbar() {
                 /* class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                  */
               >
-                <button className="border-2  p-2 rounded-lg text-blue-700  bg-white  ">
+                <button className="border-2  p-2 rounded-lg text-blue-700 w-auto  bg-white  ">
                   Say Hello !
                 </button>
               </a>
             </li>
             {/* ... (other menu items) */}
           </ul>
-          <p  className="text-white m-3  lg:hidden " >Connect on :</p>
+          {/* <p  className="text-white m-3  lg:hidden " >Connect on :</p>
 
           <div className="flex flex-row gap-4 items-center m-3 mt-3 text-white text-center text-xs  lg:hidden ">
             <a href="https://instagram.com/__mammu_kb__?igshid=ZDdkNTZiNTM=">
@@ -141,7 +141,7 @@ export default function Navbar() {
               />
             
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
